@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- This is project creater Mukhammedali Ametov -->
+
+    <!-- Website title -->
+    <title>Tur Travel</title>
+
+    <!-- Import Style Css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Import FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <!-- Start of Header -->
+    <div class="navigation">
+      <h1 class="logo">Tur Travel</h1>
+      <ul class="nav">
+        <li id="closeitem" onclick="closeMenu()" class="nav-mobile-item">
+          <a href="#home"> <i class="fas fa-home"></i> Home </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#about-link">
+            <i class="fa-solid fa-circle-info"></i> About Us
+          </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#services-link">
+            <i class="fa-solid fa-server"></i> Services
+          </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#blog-link"> <i class="fa-solid fa-book"></i> Blog </a>
+        </li>
+        <li id="closeitem" onclick="closeMenu()">
+          <a href="#contact-link" class="border-b">
+            <i class="fa-solid fa-address-book"></i> Contact
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-times"></i>
+      </div>
+    </div>
+    <!-- End of Header -->
+    <!-- Start of Home section -->
+    <section id="home">
+      <div class="home-title">
+        <h1 class="title-one">Explorer and Travel</h1>
+        <h1>Travel Tur</h1>
+        <p class="title-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, similique tempore. Aperiam non nostrum ut nulla ea nisi aliquid atque?</p>
+        <div class="home-cards">
+          <div class="card">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <div class="card-title">
+              <p>Location</p>
+              <span>Karakalpakstan</span>
+            </div>
+          </div>
+          <div class="card" style="border-left: 1px solid #fff;">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="card-title">
+              <p>Date</p>
+              <span>13 May, 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Home section -->
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
