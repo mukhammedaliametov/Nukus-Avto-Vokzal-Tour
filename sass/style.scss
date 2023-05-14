@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
 
+$global_color: #ee1c45;
+$global_font: "Clicker Script";
+$global_font2: "Work Sans";
+
+@mixin globalButton {
+  color: #fff;
+  background: rgb(205, 26, 64);
+  background: linear-gradient(
+    270deg,
+    rgba(205, 26, 64, 1) 0%,
+    rgba(255, 128, 60, 1) 100%
+  );
+  padding: 15px 25px;
+  font-family: $global_font2;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -24,7 +43,7 @@
       font-family: "Clicker Script";
       font-style: normal;
       font-weight: 400;
-      color: #ee1c45;
+      color: $global_color;
       font-size: 3rem;
       cursor: pointer;
     }
@@ -36,7 +55,7 @@
         list-style-type: none;
       }
       & a {
-        font-family: "Work Sans";
+        font-family: $global_font2;
         font-weight: 300;
         font-size: 15px;
         text-decoration: none;
@@ -67,7 +86,7 @@
           height: 80vh;
           a {
             display: block;
-            color: #ee1c45;
+            color: $global_color;
           }
           .border-b {
             border-bottom: none;
@@ -126,7 +145,7 @@
       font-family: "Clicker Script";
       font-style: normal;
       font-weight: 400;
-      color: #ee1c45;
+      color: $global_color;
       font-size: 3rem;
     }
     h1 {
@@ -134,7 +153,7 @@
       font-size: 5rem;
     }
     .title-paragraph {
-      font-family: "Work Sans";
+      font-family: $global_font2;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -160,14 +179,14 @@
         .card-title {
           padding: 0px;
           p {
-            font-family: "Work Sans";
+            font-family: $global_font2;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
           }
           span {
-            font-family: "Work Sans";
+            font-family: $global_font2;
             font-style: normal;
             font-weight: 700;
             font-size: 15px;
@@ -179,7 +198,7 @@
   }
 
   @media only screen and (max-width: 920px) {
-    &{
+    & {
       background-position: left;
       .home-title {
         width: 100%;
@@ -209,14 +228,14 @@
             .card-title {
               padding: 0px;
               p {
-                font-family: "Work Sans";
+                font-family: $global_font2;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 24px;
               }
               span {
-                font-family: "Work Sans";
+                font-family: $global_font2;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 15px;
@@ -227,6 +246,78 @@
         }
       }
     }
+  }
+}
 
+#destination {
+  .section-title {
+    text-align: center;
+    .first-text {
+      font-family: $global_font;
+      padding-top: 60px;
+      font-size: 3rem;
+      color: $global_color;
+    }
+    .second-text {
+      font-family: $global_font2;
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+  .img-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    padding: 30px 20px;
+    img {
+      width: 50%;
+      height: 103.5vh;
+      padding-top: 10px;
+    }
+    .first-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 50vh;
+        padding: 10px;
+      }
+      .second-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+          width: 100%;
+          height: 55vh;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 920px){
+    .section-title{
+      .second-text{
+        font-size: 3rem;
+      }
+    }
+    .img-content{
+      flex-direction: column;
+      margin-top: 300px;
+      img{
+        width: 100%;
+      }
+      .first-content{
+        img{
+          width: 100%;
+          height: 30vh;
+        }
+        flex-direction: column;
+        .second-content{
+          flex-direction: column;
+        }
+      }
+    }
   }
 }
