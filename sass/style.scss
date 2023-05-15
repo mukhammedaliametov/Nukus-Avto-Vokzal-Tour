@@ -37,7 +37,7 @@ $global_font2: "Work Sans";
     padding: 10px 50px;
     width: 100%;
     &.sticky {
-      background-color: #000000cc;
+      background-color: rgba(0, 0, 0, 0.897);
     }
     .logo {
       font-family: "Clicker Script";
@@ -75,7 +75,7 @@ $global_font2: "Work Sans";
         flex-direction: column;
         left: 0;
         background: rgba(0, 0, 0, 0.897);
-        top: 75px;
+        top: 82px;
         width: 100%;
         text-align: center;
         height: 0vh;
@@ -145,12 +145,13 @@ $global_font2: "Work Sans";
       font-family: "Clicker Script";
       font-style: normal;
       font-weight: 400;
-      color: $global_color;
+      color: #fff;
       font-size: 3rem;
     }
     h1 {
       font-weight: 600;
       font-size: 5rem;
+      color: $global_color;
     }
     .title-paragraph {
       font-family: $global_font2;
@@ -251,10 +252,9 @@ $global_font2: "Work Sans";
 
 .section-title {
   text-align: center;
-  padding: 0px 20px;
+  padding: 30px 20px;
   .first-text {
     font-family: $global_font;
-    padding-top: 60px;
     font-size: 3rem;
     color: $global_color;
   }
@@ -264,52 +264,177 @@ $global_font2: "Work Sans";
     text-transform: uppercase;
     font-weight: 300;
   }
-  @media only screen and (max-width: 920px){
-    .second-text{
+  p {
+    font-family: $global_font2;
+    color: #000000d7;
+    padding: 0px 150px;
+  }
+  @media only screen and (max-width: 920px) {
+    .second-text {
       font-size: 3rem;
+    }
+    p {
+      padding: 5px;
     }
   }
 }
 
-
-#about{
+#about {
   padding: 30px 10px;
-  .about-container{
+  .about-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
-    img{
+    img {
       width: 50%;
     }
   }
-  .about-title{
+  .about-title {
     padding: 10px 30px;
     width: 50%;
-    h1{
+    h1 {
       font-size: 3rem;
       color: $global_color;
       font-family: $global_font2;
+      text-align: center;
     }
-    p{
-      color: #00000093;
-      font-size: 1rem;
+    p {
+      color: #000000d0;
+      font-size: 1.1rem;
       font-family: $global_font2;
       padding: 10px;
       width: 90%;
     }
   }
-  @media only screen and (max-width: 920px){
-    .about-container{
+  @media only screen and (max-width: 920px) {
+    .about-container {
       flex-direction: column;
-      img{
+      img {
         width: 100%;
       }
-      .about-title{
+      .about-title {
         width: 100%;
         padding: 20px 10px;
-        h1{
-          text-align: center;
+      }
+    }
+  }
+}
+
+#services {
+  padding: 30px 10px;
+  background-color: #daf1f19c;
+  .services-container {
+    padding: 10px;
+    .cards-content {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 2rem;
+      .card {
+        background-color: #fff;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: 0.5s ease;
+        &:hover {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        img {
+          width: 100%;
+          height: 40vh;
+        }
+        .info-card {
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .text-one {
+            flex-direction: column;
+            display: flex;
+            span {
+              font-size: 1.2rem;
+              padding: 4px;
+              font-family: $global_font2;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+            p {
+              padding: 4px;
+              font-weight: 400;
+            }
+          }
+          span {
+            padding: 10px;
+            font-weight: 500;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 920px) {
+    .services-container {
+      .cards-content {
+        display: flex;
+        flex-direction: column;
+        .card {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+#activity {
+  .activity-content {
+    padding: 10px 20px;
+    .activity-cards {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 2rem;
+      padding: 10px 30px;
+      .card {
+        text-align: center;
+        background: #FFF9F0;
+        padding: 10px 0px;
+        border-radius: 8px;
+        img {
+          width: 50%;
+          height: 25vh;
+          padding: 10px;
+        }
+        h2 {
+          color: #999999;
+          font-family: $global_font2;
+          font-weight: 800;
+          padding-top: 20px;
+        }
+        p {
+          font-family: $global_font2;
+          color: #999999;
+          text-align: left;
+          padding: 10px 30px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 920px){
+    .activity-content{
+      padding: 10px;
+      .activity-cards{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .card{
+          padding: 0;
+          img{
+            height: 20vh;
+          }
         }
       }
     }
