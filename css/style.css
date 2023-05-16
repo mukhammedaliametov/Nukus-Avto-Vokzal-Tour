@@ -436,4 +436,84 @@
   }
 }
 
+footer {
+  padding: 20px 10px;
+  background-image: url(../images/footer-img.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  display: grid;
+  gap: 5rem;
+  width: 100%;
+  grid-template-columns: auto auto auto auto;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3294117647);
+  align-items: center;
+}
+footer .content-1 {
+  margin-right: 80px;
+  margin-left: 40px;
+}
+footer .content-1 h1 {
+  font-size: 3rem;
+  font-family: "Clicker Script";
+  color: #Fff;
+}
+footer .content-1 p {
+  font-family: "Work Sans";
+  padding: 20px 0px;
+  color: #fff;
+}
+footer .content-1 .icons i {
+  color: #fff;
+  padding: 0px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+footer .content-2 {
+  display: flex;
+  flex-direction: column;
+}
+footer .content-2 p {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+footer .content-2 a {
+  font-family: "Work Sans";
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 0px;
+}
+@media only screen and (max-width: 920px) {
+  footer {
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+  footer .content-1 {
+    margin: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+  }
+  footer .content-2 {
+    padding: 10px 30px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.developer {
+  text-align: center;
+  background-color: #000;
+  padding: 10px 0px;
+}
+.developer a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-size: 1.2rem;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

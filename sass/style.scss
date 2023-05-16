@@ -463,3 +463,85 @@ $global_font2: "Work Sans";
     }
   }
 }
+
+footer{
+  padding: 20px 10px;
+  background-image: url(../images/footer-img.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  display: grid;
+  gap: 5rem;
+  width: 100%;
+  grid-template-columns: auto auto auto auto;
+  box-shadow: inset 0 0 0 1000px #00000054; 
+  align-items: center;
+  .content-1{
+    margin-right: 80px;
+    margin-left: 40px;
+    h1{
+      font-size: 3rem;
+      font-family: $global_font;
+      color: #Fff;
+    }
+    p{
+      font-family: $global_font2;
+      padding: 20px 0px;
+      color: #fff;
+    }
+    .icons{
+      i{
+        color: #fff;
+        padding: 0px 10px;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .content-2{
+    display: flex;
+    flex-direction: column;
+    p{
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    a{
+      font-family: $global_font2;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 10px 0px;
+    }
+  }
+  @media only screen and (max-width: 920px){
+    &{
+      grid-template-columns: auto;
+      gap: 1rem;
+      .content-1{
+        margin: 10px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+      }
+      .content-2{
+        padding: 10px 30px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+
+.developer{
+  text-align: center;
+  background-color: #000;
+  padding: 10px 0px;
+  a{
+    text-align: center;
+    text-decoration: none;
+    font-family: $global_font2;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
