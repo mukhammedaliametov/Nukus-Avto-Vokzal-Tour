@@ -21,6 +21,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Import AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
   </head>
   <body>
     <!-- Start of Header -->
@@ -59,7 +63,7 @@
     <!-- End of Header -->
     <!-- Start of Home section -->
     <section id="home">
-      <div class="home-title">
+      <div class="home-title" data-aos="fade-up" data-aos-duration="2000">
         <h1 class="title-one">Explorer and Travel</h1>
         <h1>Travel Tur</h1>
         <p class="title-paragraph">
@@ -87,7 +91,7 @@
     <!-- End of Home section -->
     <!-- Start of About section -->
     <div id="about">
-      <div class="section-title" id="about-link">
+      <div class="section-title" id="about-link" data-aos="fade-down" data-aos-duration="1000">
         <h1 class="first-text">More information</h1>
         <h1 class="second-text">About Us</h1>
         <p>
@@ -96,8 +100,8 @@
         </p>
       </div>
       <div class="about-container">
-        <img src="./images/web-travel.png" alt="about-img" />
-        <div class="about-title">
+        <img src="./images/web-travel.png" alt="about-img" data-aos="zoom-in" data-aos-duration="1000"/>
+        <div class="about-title" data-aos="fade-up" data-aos-duration="1500">
           <h1>Tur Travel</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -117,7 +121,7 @@
     <!-- End of About section -->
     <!-- Start of Services section -->
     <div id="services">
-      <div class="section-title" id="services-link">
+      <div class="section-title" id="services-link" data-aos="fade-down" data-aos-duration="1000">
         <h1 class="first-text">These are our</h1>
         <h1 class="second-text">Services</h1>
         <p>
@@ -128,64 +132,64 @@
       </div>
       <div class="services-container">
         <div class="cards-content">
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <img src="./images/services-img/img-1.jpg" alt="" />
             <div class="info-card">
               <div class="text-one">
-                <span>Rome, Italy</span>
+                <span><i class="fa-solid fa-location-dot"></i> Rome, Italy</span>
                 <p>10 days trip</p>
               </div>
               <span>$5.24K</span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <img src="./images/services-img/img-2.jpg" alt="" />
             <div class="info-card">
               <div class="text-one">
-                <span>Lahore, Pakistan</span>
+                <span><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</span>
                 <p>6 days trip</p>
               </div>
               <span>$3.25K</span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <img src="./images/services-img/img-3.jpg" alt="" />
             <div class="info-card">
               <div class="text-one">
-                <span>Singapore</span>
+                <span><i class="fa-solid fa-location-dot"></i> Singapore</span>
                 <p>6 days trip</p>
               </div>
               <span>$7.00K</span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <img src="./images/services-img/img-4.jpg" alt="" />
             <div class="info-card">
               <div class="text-one">
-                <span>Paris, France</span>
+                <span><i class="fa-solid fa-location-dot"></i> Paris, France</span>
                 <p>6 days trip</p>
               </div>
               <span>$7.00K</span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <img src="./images/services-img/img-5.jpg" alt="" />
             <div class="info-card">
               <div class="text-one">
-                <span>Almata, Kazakhstan</span>
+                <span><i class="fa-solid fa-location-dot"></i> Almata, Kazakhstan</span>
                 <p>10 days trip</p>
               </div>
               <span>$4.24K</span>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-aos="zoom-in">
             <img
               src="https://www.civitatis.com/f/uzbekistan/nukus/tour-mizdakhan-museo-igor-savitsky-r32.jpg"
               alt=""
             />
             <div class="info-card">
               <div class="text-one">
-                <span>Nukus, Karakalpakstan</span>
+                <span><i class="fa-solid fa-location-dot"></i> Nukus, Karakalpakstan</span>
                 <p>6 days trip</p>
               </div>
               <span>$3.00K</span>
@@ -197,7 +201,7 @@
     <!-- End of Services section -->
     <!-- Start of Activity section -->
     <div id="activity">
-      <div class="section-title" id="activity-link">
+      <div class="section-title" id="activity-link" data-aos="fade-down" data-aos-duration="1000">
         <h1 class="first-text">Travel by</h1>
         <h1 class="second-text">Activity</h1>
         <p>
@@ -208,7 +212,7 @@
       </div>
       <div class="activity-content">
         <div class="activity-cards">
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="./images/activity-cards-img/1.png" alt="" />
             <h2>Adventure</h2>
             <p>
@@ -217,7 +221,7 @@
               cumque. Unde, labore.
             </p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="./images/activity-cards-img/2.png" alt="" />
             <h2>Camping</h2>
             <p>
@@ -226,7 +230,7 @@
               quaerat natus.
             </p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="./images/activity-cards-img/3.png" alt="" />
             <h2>Treking</h2>
             <p>
@@ -235,7 +239,7 @@
               quaerat natus.
             </p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="./images/activity-cards-img/4.png" alt="" />
             <h2>Off Road</h2>
             <p>
@@ -244,7 +248,7 @@
               quaerat natus.
             </p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="./images/activity-cards-img/5.png" alt="" />
             <h2>Camp Fire</h2>
             <p>
@@ -253,7 +257,7 @@
               quaerat natus.
             </p>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-left">
             <img src="./images/activity-cards-img/6.png" alt="" />
             <h2>Expiring</h2>
             <p>
@@ -268,7 +272,7 @@
     <!-- End of Activity section -->
     <!-- Start of Blog section -->
     <div id="blogs">
-      <div class="section-title" id="blog-link">
+      <div class="section-title" id="blog-link" data-aos="fade-down" data-aos-duration="1000">
         <h1 class="first-text">Best travels</h1>
         <h1 class="second-text">Blogs</h1>
         <p>
@@ -332,7 +336,15 @@
       <a href=""><i class="fa-solid fa-terminal"></i> Mukhammedali Ametov</a>
     </div>
     <!-- End of Footer -->
+
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
+
+    <!-- AOS animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
