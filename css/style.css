@@ -411,4 +411,29 @@
   }
 }
 
+#blogs {
+  padding: 20px 100px;
+}
+#blogs .blog-images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+}
+#blogs .blog-images img {
+  width: 100%;
+  height: 70vh;
+}
+@media only screen and (max-width: 920px) {
+  #blogs {
+    padding: 20px 10px;
+  }
+  #blogs .blog-images {
+    display: flex;
+    flex-direction: column;
+  }
+  #blogs .blog-images img {
+    height: 55vh;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

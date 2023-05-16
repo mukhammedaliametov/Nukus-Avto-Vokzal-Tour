@@ -440,3 +440,26 @@ $global_font2: "Work Sans";
     }
   }
 }
+
+#blogs{
+  padding: 20px 100px;
+  .blog-images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    img{
+      width: 100%;
+      height: 70vh;
+    }
+  }
+  @media only screen and (max-width: 920px){
+    padding: 20px 10px;
+    .blog-images{
+      display: flex;
+      flex-direction: column;
+      img{
+        height: 55vh;
+      }
+    }
+  }
+}
