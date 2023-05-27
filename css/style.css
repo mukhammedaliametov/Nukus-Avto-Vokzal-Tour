@@ -47,6 +47,35 @@
 * .navigation .nav a:hover {
   border-bottom: 2px solid #fff;
 }
+* .navigation .lan .global-lan {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  font-family: "Work Sans";
+  cursor: pointer;
+}
+* .navigation .lan .global-lan i {
+  padding: 0px 10px;
+}
+* .navigation .lan .lanuages {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+* .navigation .lan .lanuages a {
+  text-decoration: none;
+  padding: 10px 0px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+* .navigation .lan .lanuages.active {
+  display: flex;
+}
 @media only screen and (max-width: 920px) {
   * .navigation {
     padding: 10px 15px;
@@ -65,7 +94,7 @@
   }
   * .navigation .nav.active {
     background: rgba(0, 0, 0, 0.897);
-    height: 80vh;
+    height: 84vh;
   }
   * .navigation .nav.active a {
     display: block;
@@ -74,11 +103,43 @@
   * .navigation .nav.active .border-b {
     border-bottom: none;
   }
+  * .navigation .nav.active .lan {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    font-family: "Clicker Script";
+    padding: 30px 20px;
+  }
+  * .navigation .nav.active .lan .global-lan p {
+    font-family: "Clicker Script";
+  }
+  * .navigation .nav.active .lan .global-lan i {
+    display: none;
+  }
+  * .navigation .nav.active .lan .lanuages {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: none;
+    padding: 0px;
+    backdrop-filter: blur(0px);
+    background-color: #000000;
+    margin: 0;
+  }
+  * .navigation .nav.active .lan .lanuages a {
+    border-bottom: none;
+    padding: 0px;
+    color: #fff;
+    padding-left: 110px;
+  }
   * .navigation .nav a {
     display: none;
     font-size: 1.2rem;
     border-bottom: 1px solid #ffffff;
     padding: 50px 0px;
+  }
+  * .navigation .nav .lan {
+    display: none;
   }
 }
 * .hamburger {

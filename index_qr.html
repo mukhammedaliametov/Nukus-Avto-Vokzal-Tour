@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Website title -->
+  <title>Tur Sayaxat</title>
+
+  <!-- Import Style Css file -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Import FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Import AOS animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start of Header -->
+  <div class="navigation">
+    <h1 class="logo">Tur Travel</h1>
+    <ul class="nav">
+      <li id="closeitem" onclick="closeMenu()" class="nav-mobile-item">
+        <a href="#home"> <i class="fas fa-home"></i> Bas bólim </a>
+      </li>
+      <li id="closeitem" onclick="closeMenu()">
+        <a href="#about-link">
+          <i class="fa-solid fa-circle-info"></i> Biz haqqimizda
+        </a>
+      </li>
+      <li id="closeitem" onclick="closeMenu()">
+        <a href="#services-link">
+          <i class="fa-solid fa-server"></i> Xizmetlerimiz
+        </a>
+      </li>
+      <li id="closeitem" onclick="closeMenu()">
+        <a href="#activity-link">
+          <i class="fa-solid fa-layer-group"></i> Iskerlik
+        </a>
+      </li>
+      <li id="closeitem" onclick="closeMenu()">
+        <a href="#blog-link"> <i class="fa-solid fa-book"></i> Bloglar </a>
+      </li>
+      <div class="lan">
+        <div class="global-lan">
+          <i class="fa-solid fa-language"></i>
+          <p style="font-family: 'Work Sans'" ;>Kar</p>
+        </div>
+        <div class="lanuages">
+          <a href="./index.html">Eng</a>
+          <a href="./index_rus.html" style="border-bottom: none">Rus</a>
+        </div>
+      </div>
+    </ul>
+    <div class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-times"></i>
+    </div>
+  </div>
+  <!-- End of Header -->
+  <!-- Start of Home section -->
+  <section id="home">
+    <div class="home-title" data-aos="fade-up" data-aos-duration="2000">
+      <h1 class="title-one">Izertlewshi hámde sayaxat</h1>
+      <h1>Sayaxat Tur</h1>
+      <p class="title-paragraph">
+        Sayaxatıńızdı biz menen este qalarlı hám qáwipsiz etiń. Mıń jıllar
+        dawamında bul region mádeniyatlar hám bay tariyx kóshe kesispesi bolıp
+        kelgen.
+      </p>
+      <div class="home-cards">
+        <div class="card">
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+          <div class="card-title">
+            <p>Mánzil</p>
+            <span>Qaraqalpaqıstan</span>
+          </div>
+        </div>
+        <div class="card" style="border-left: 1px solid #fff">
+          <i class="fa-solid fa-calendar-days"></i>
+          <div class="card-title">
+            <p>Sáne</p>
+            <span>13 May, 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Home section -->
+  <!-- Start of About section -->
+  <div id="about">
+    <div class="section-title" id="about-link" data-aos="fade-down" data-aos-duration="1000">
+      <h1 class="first-text">Tolıq maǵlıwmat</h1>
+      <h1 class="second-text">Biz haqqımızda</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
+        commodi.
+      </p>
+    </div>
+    <div class="about-container">
+      <img src="./images/web-travel.png" alt="about-img" data-aos="zoom-in" data-aos-duration="1000" />
+      <div class="about-title" data-aos="fade-up" data-aos-duration="1500">
+        <h1>Tur Travel</h1>
+        <p>
+          Sayaxatıńızdı biz menen este qalarli hám qawipsiz etiń. Mıń jıllar
+          dawamında bul region mádeniyatlar hám bay tariyx kóshe kesispesi
+          bolıp kelgen. Bul jerde Ullı Jipek jolı payda boldı, zardushtiylik,
+          buddizm, islam dini rawajlandi. Keń shól ortasında jaylasqan
+          qalalardıń oazisleri materiallıq hám sawda orayları bolg'an.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End of About section -->
+  <!-- Start of Services section -->
+  <div id="services">
+    <div class="section-title" id="services-link" data-aos="fade-down" data-aos-duration="1000">
+      <h1 class="first-text">Bular biziń</h1>
+      <h1 class="second-text">XIZMETLER</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+        nostrum ipsa fugit, saepe molestiae culpa consequuntur quisquam dolore
+        deleniti error.
+      </p>
+    </div>
+    <div class="services-container">
+      <div class="cards-content">
+        <div class="card" data-aos="zoom-in">
+          <img src="./images/services-img/img-1.jpg" alt="" />
+          <div class="info-card">
+            <div class="text-one">
+              <span><i class="fa-solid fa-location-dot"></i> Xiywa</span>
+              <p>2 kúnlik sayaxat </p>
+            </div>
+            <span>80.000/adam</span>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-in">
+          <img src="./images/services-img/img-2.jpg" alt="" />
+          <div class="info-card">
+            <div class="text-one">
+              <span><i class="fa-solid fa-location-dot"></i> Samarqand</span>
+              <p>3 kúnlik sayaxat </p>
+            </div>
+            <span>350.000/adam</span>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-in">
+          <img src="./images/services-img/img-3.jpg" alt="" />
+          <div class="info-card">
+            <div class="text-one">
+              <span><i class="fa-solid fa-location-dot"></i> Buxara</span>
+              <p>3 kúnlik sayaxat </p>
+            </div>
+            <span>300.000/adam</span>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-in">
+          <img src="./images/services-img/img-4.jpg" alt="" />
+          <div class="info-card">
+            <div class="text-one">
+              <span><i class="fa-solid fa-location-dot"></i> Moynaq</span>
+              <p>2 kúnlik sayaxat </p>
+            </div>
+            <span>150.000/adam</span>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-in">
+          <img src="./images/services-img/img-5.jpg" alt="" />
+          <div class="info-card">
+            <div class="text-one">
+              <span><i class="fa-solid fa-location-dot"></i> Shılpıq</span>
+              <p>1 kúnlik sayaxat </p>
+            </div>
+            <span>100.000/adam</span>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-in">
+          <img src="https://www.civitatis.com/f/uzbekistan/nukus/tour-mizdakhan-museo-igor-savitsky-r32.jpg" alt="" />
+          <div class="info-card">
+            <div class="text-one">
+              <span><i class="fa-solid fa-location-dot"></i> Savitsky
+                Muzey</span>
+              <p>2 kúnlik sayaxat </p>
+            </div>
+            <span>150.000/adam</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Services section -->
+  <!-- Start of Activity section -->
+  <div id="activity">
+    <div class="section-title" id="activity-link" data-aos="fade-down" data-aos-duration="1000">
+      <h1 class="first-text">Sayaxat qılıw</h1>
+      <h1 class="second-text">Iskerlik</h1>
+    </div>
+    <div class="activity-content">
+      <div class="activity-cards">
+        <div class="card" data-aos="flip-left">
+          <img src="./images/activity-cards-img/1.png" alt="" />
+          <h2>Hádiyse</h2>
+          <p>
+            Ózbekstan boylap sayaxat etiń hám ózińizdi eń jaqsı sezim etiń. Modi voluptatibus
+            saepe eius consequuntur fuga, deleniti iste eligendi cumque. Unde,
+            miynet.
+          </p>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <img src="./images/activity-cards-img/2.png" alt="" />
+          <h2>Kemping</h2>
+          <p>
+            Qızıqlı sayaxat jobaları tek bizde. Korporis totam, vitae ad
+            culpa dolorem veritatis velit praesentium hám quaerat natus.
+          </p>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <img src="./images/activity-cards-img/3.png" alt="" />
+          <h2>Treking</h2>
+          <p>
+            Eń jaqsı adamlar mudam siz menen. Korporis totam, vitae ad
+            culpa dolorem veritatis velit praesentium hám quaerat natus.
+          </p>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <img src="./images/activity-cards-img/4.png" alt="" />
+          <h2>Jolsızlıq sharayatlarında </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            totam, vitae ad culpa dolorem veritatis velit praesentium at
+            quaerat natus.
+          </p>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <img src="./images/activity-cards-img/5.png" alt="" />
+          <h2>Kamp órtı </h2>
+          <p>
+            Biz siz ushın qızıqlı jaylardı bilamiz. Korporis totam, vitae ad
+            culpa dolorem veritatis velit praesentium hám quaerat natus.
+          </p>
+        </div>
+        <div class="card" data-aos="flip-left">
+          <img src="./images/activity-cards-img/6.png" alt="" />
+          <h2>Múddeti tewsiliw</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            totam, vitae ad culpa dolorem veritatis velit praesentium at
+            quaerat natus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End of Activity section -->
+  <!-- Start of Blog section -->
+  <div id="blogs">
+    <div class="section-title" id="blog-link" data-aos="fade-down" data-aos-duration="1000">
+      <h1 class="first-text">Eń jaqsı sayaxatlar </h1>
+      <h1 class="second-text">BLOGLAR</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+        nostrum ipsa fugit, saepe molestiae culpa consequuntur quisquam dolore
+        deleniti error.
+      </p>
+    </div>
+    <div class="blog-images">
+      <img src="./images/blog-img/1.jpg" alt="" />
+      <img src="./images/blog-img/3.jpg" alt="" />
+      <img
+        src="https://www.inter-travel-nukus.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout-2.fb6eb07a.png&w=1080&q=75"
+        alt="" />
+      <img src="./images/blog-img/4.jpg" alt="" />
+      <img
+        src="https://www.inter-travel-nukus.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fabout-3.5781050c.jpg&w=1080&q=75"
+        alt="" />
+      <img src="./images/blog-img/2.jpg" alt="" />
+    </div>
+  </div>
+  <!-- End of Blog section -->
+  <!-- Start of Footer -->
+  <footer>
+    <div class="content-1">
+      <h1>Tur Travel</h1>
+      <p>
+        Keń shól ortasında jaylasqan qalalardıń oazisleri materiallıq hám sawda orayları bolg'an.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-telegram"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    <div class="content-2">
+      <p>Biz haqqımızda</p>
+      <a href="">Menyu</a>
+      <a href="">Qásiyetleri</a>
+      <a href="">Jańalıqlar hám Bloglar</a>
+      <a href="">Járdem hám qollap-quwatlaw </a>
+    </div>
+    <div class="content-2">
+      <p>Kompaniya </p>
+      <a href="">Biz qanday isleymiz</a>
+      <a href="">Xızmetler shártleri</a>
+      <a href="">Bahalaw </a>
+      <a href="">FAQ</a>
+    </div>
+    <div class="content-2" style="border-bottom: none">
+      <p>Baylanis</p>
+      <a href="" style="width: 70%">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar,
+        Bangalore-560016</a>
+      <a href="">+998(94)833-06-81</a>
+      <a href="">travel.tur11@mail.com</a>
+      <a href="">nukusavtovokzaltur.uz</a>
+    </div>
+  </footer>
+  <div class="developer">
+    <a href="https://www.bizler.group"><i class="fa-solid fa-terminal"></i> Bizler Group</a>
+  </div>
+  <!-- End of Footer -->
+
+  <!-- JavaScript -->
+  <script src="./js/script.js"></script>
+
+  <!-- AOS animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

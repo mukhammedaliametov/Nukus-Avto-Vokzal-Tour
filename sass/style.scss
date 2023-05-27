@@ -66,6 +66,37 @@ $global_font2: "Work Sans";
         }
       }
     }
+    .lan{
+      .global-lan{
+        display: flex;
+        justify-content: space-evenly;
+        color: #fff;
+        font-family: $global_font2;
+        cursor: pointer;
+        i{
+          padding: 0px 10px;
+        }
+      }
+      .lanuages{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin-top: 10px;
+        a{
+          text-decoration: none;
+          padding: 10px 0px;
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+        &.active{
+          display: flex;
+        }
+      }
+    }
     @media only screen and (max-width: 920px) {
       & {
         padding: 10px 15px;
@@ -83,7 +114,7 @@ $global_font2: "Work Sans";
         z-index: 998;
         &.active {
           background: rgba(0, 0, 0, 0.897);
-          height: 80vh;
+          height: 84vh;
           a {
             display: block;
             color: $global_color;
@@ -91,12 +122,47 @@ $global_font2: "Work Sans";
           .border-b {
             border-bottom: none;
           }
+          .lan{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            font-family: $global_font;
+
+            padding: 30px 20px;
+            .global-lan{
+              p{
+                font-family: $global_font;
+              }
+              i{
+                display: none;
+              }
+            }
+            .lanuages{
+              position: relative;
+              display: grid;
+              grid-template-columns: auto auto;
+              background-color: none;
+              padding: 0px;
+              backdrop-filter: blur(0px);
+              background-color: #000000;
+              margin: 0;
+              a{
+                border-bottom: none;
+                padding: 0px;
+                color: #fff;
+                padding-left: 110px;
+              }
+            }
+          }
         }
         & a {
           display: none;
           font-size: 1.2rem;
           border-bottom: 1px solid #ffffff;
           padding: 50px 0px;
+        }
+        .lan{
+          display: none;
         }
       }
     }

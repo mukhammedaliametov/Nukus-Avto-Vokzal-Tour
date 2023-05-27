@@ -29,3 +29,10 @@ function myFunction() {
     navbarEl.classList.remove("sticky");
   }
 }
+
+const globalLan = document.querySelector('.lan'),
+lanuagesEl = document.querySelector('.lanuages');
+
+globalLan.addEventListener('click', () => {
+  lanuagesEl.classList.toggle('active');
+});
