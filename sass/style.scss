@@ -114,7 +114,7 @@ $global_font2: "Work Sans";
         z-index: 998;
         &.active {
           background: rgba(0, 0, 0, 0.897);
-          height: 84vh;
+          height: 76vh;
           a {
             display: block;
             color: $global_color;
@@ -144,7 +144,7 @@ $global_font2: "Work Sans";
               background-color: none;
               padding: 0px;
               backdrop-filter: blur(0px);
-              background-color: #000000;
+              background-color: #ffffff00;
               margin: 0;
               a{
                 border-bottom: none;
@@ -159,7 +159,7 @@ $global_font2: "Work Sans";
           display: none;
           font-size: 1.2rem;
           border-bottom: 1px solid #ffffff;
-          padding: 50px 0px;
+          padding: 40px 0px;
         }
         .lan{
           display: none;
