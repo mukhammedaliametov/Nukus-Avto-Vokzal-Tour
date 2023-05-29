@@ -260,6 +260,18 @@ $global_font2: "Work Sans";
             line-height: 24px;
           }
         }
+        a{
+          text-decoration: none;
+          font-family: $global_font2;
+          font-size: 1.1rem;
+          color: #fff;
+          transition: .5s ease;
+          border-bottom: 1px solid #fff;
+          padding-bottom: 3px;
+          &:hover{
+            color: $global_color;
+          }
+        }
       }
     }
   }

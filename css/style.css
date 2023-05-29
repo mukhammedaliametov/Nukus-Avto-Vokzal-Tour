@@ -237,6 +237,18 @@
   font-size: 15px;
   line-height: 24px;
 }
+#home .home-title .home-cards .card a {
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-size: 1.1rem;
+  color: #fff;
+  transition: 0.5s ease;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
+}
+#home .home-title .home-cards .card a:hover {
+  color: #ee1c45;
+}
 @media only screen and (max-width: 920px) {
   #home {
     background-position: left;
