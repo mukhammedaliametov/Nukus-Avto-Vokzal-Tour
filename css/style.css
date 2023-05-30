@@ -21,11 +21,7 @@
   background-color: rgba(0, 0, 0, 0.897);
 }
 * .navigation .logo {
-  font-family: "Clicker Script";
-  font-style: normal;
-  font-weight: 400;
-  color: #ee1c45;
-  font-size: 3rem;
+  width: 8%;
   cursor: pointer;
 }
 * .navigation .nav {
@@ -191,7 +187,7 @@
 }
 #home .home-title h1 {
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 3.4rem;
   color: #ee1c45;
 }
 #home .home-title .title-paragraph {
