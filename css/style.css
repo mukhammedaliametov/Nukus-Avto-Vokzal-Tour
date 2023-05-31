@@ -76,6 +76,9 @@
   * .navigation {
     padding: 10px 15px;
   }
+  * .navigation .logo {
+    width: 28%;
+  }
   * .navigation .nav {
     position: absolute;
     flex-direction: column;
