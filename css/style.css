@@ -57,7 +57,7 @@
   display: none;
   position: absolute;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.507);
   backdrop-filter: blur(5px);
   padding: 10px 30px;
   border-radius: 10px;
@@ -527,9 +527,9 @@ footer .content-1 {
   margin-left: 40px;
 }
 footer .content-1 h1 {
-  font-size: 3rem;
-  font-family: "Clicker Script";
-  color: #Fff;
+  font-size: 1.7rem;
+  font-family: "Work Sans";
+  color: #fff;
 }
 footer .content-1 p {
   font-family: "Work Sans";
